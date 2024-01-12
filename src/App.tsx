@@ -159,16 +159,14 @@ function App() {
   return (
     <div className="App">
   <header className="App-header">
-    <div className='div1'>
-      <h2>Connect To</h2>
-      <h2>Phantom Wallet</h2>
-      <img src="https://assets-global.website-files.com/63ab2dc5eb51b07924102f7a/63db71cd962fa1e88458c202_phantom-logo-freelogovectors.net_.png"></img>
-    </div>
-    <div className='div2'>
-      <button className="custom-button" onClick={createWallet}>Create a New Solana Account</button>
-      <button className="custom-button" onClick={transferToWallet}>Transfer SOL to New Account</button>
-      <button className="custom-button" onClick={ connectWallet }>______Connect Wallet_______</button>
-      <button className="custom-button" onClick={getWalletBalance}>_____New Account Balance___</button>
+  <title>Connect Phantom Wallet</title>
+    <h1>Connect Phantom Wallet</h1>
+
+    <div className="button-container">
+      <button className="button" onClick={createWallet}>Create a New Solana Account</button>
+      <button className="button" onClick={transferToWallet}>Transfer SOL to New Account</button>
+      <button className="button" onClick={ connectWallet }>Connect Wallet</button>
+      <button className="button" onClick={getWalletBalance}>New Account Balance</button>
       {provider && walletKey && <p>Connected account</p>}
       {message && <p>{message}</p>}
     </div>
